@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 process.env.HANKO_API_KEY = process.env.HANKO_API_KEY || "dummy_key";
 process.env.NEXT_PUBLIC_HANKO_TENANT_ID = process.env.NEXT_PUBLIC_HANKO_TENANT_ID || "dummy_id";
+// السطور الجديدة اللي طلبتها
+process.env.OPENAI_API_KEY = process.env.OPENAI_API_KEY || "sk-1234567890abcdef1234567890abcdef";
+process.env.SLACK_CLIENT_ID = process.env.SLACK_CLIENT_ID || "dummy_slack_id";
+process.env.SLACK_CLIENT_SECRET = process.env.SLACK_CLIENT_SECRET || "dummy_slack_secret";
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
