@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+process.env.HANKO_API_KEY = process.env.HANKO_API_KEY || "dummy_key";
+process.env.NEXT_PUBLIC_HANKO_TENANT_ID = process.env.NEXT_PUBLIC_HANKO_TENANT_ID || "dummy_id";
 const nextConfig = {
   reactStrictMode: true,
   pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
