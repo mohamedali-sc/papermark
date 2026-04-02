@@ -54,6 +54,8 @@ jobs:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3BD64135B6414E258A1871021384DCE5 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_628B8B65DDB84812845A356A322F62FC }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_17F33AC86E5A4D0EAB2A74BA1212E578 }}
+          HANKO_API_KEY: ${{ secrets.HANKO_API_KEY }}
+          NEXT_PUBLIC_HANKO_TENANT_ID: ${{ secrets.NEXT_PUBLIC_HANKO_TENANT_ID }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
